@@ -2,21 +2,23 @@
 <html>
 	<body>
 		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-		<script>
-			$(document).ready(function() {
-				$.getJSON("stored/fun.json", function(data) {
-					var commandData = "";
-					$.each(data.content, function(key, value) {
-						commandData += "<tr>";
-						commandData += "<td>" + value.name + "</td>";
-						commandData += "<td>" + value.description + "</td>";
-						commandData += "<td>" + value.examples + "</td>";
-						commandData += "</tr>";
+		<p>hi ima noob.</p>
+		<table style="width:100%">
+			<script>
+				$(document).ready(function() {
+					$.getJSON("stored/fun.json", function(data) {
+						var commandData = "";
+						$.each(data.content, function(key, value) {
+							commandData += "<tr>";
+							commandData += "<td>" + value.name + "</td>";
+							commandData += "<td>" + value.description + "</td>";
+							commandData += "<td>" + value.examples + "</td>";
+							commandData += "</tr>";
+						});
+						$("#command_table").append(commandData);
 					});
-					$("#command_table").append(commandData);
 				});
-			});
-		</script>
+			</script>
+		</table>
 	</body>
 </html>
