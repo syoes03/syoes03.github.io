@@ -1,0 +1,185 @@
+{
+  "content": [
+    {
+      "name": "arena",
+      "format": "[Gamertag]",
+      "aliases": ["a"],
+      "description": "Get players get arena stats.\n`!arena gamertag`",
+      "examples": ["arena gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "background",
+      "format": "[Gamertag]",
+      "aliases": ["bg", "back ground", "customs"],
+      "description": "Get Custom games played.\n `!background gamertag` ",
+      "examples": ["background gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "campaign",
+      "format": "[Gamertag]",
+      "aliases": ["c"],
+      "description": "Get gamesplayed in all playlist.\n `!campaign gamertag` ",
+      "examples": ["campaign gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "csr",
+      "format": "[Gamertag]",
+      "aliases": ["competetivespartanrank"],
+      "description": "Get players CSR\n`!csr gamertag`",
+      "examples": ["csr gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "emblem",
+      "format": "[Gamertag]",
+      "aliases": ["icon"],
+      "description": "Get players Halo 5 emblem\n `!emblem gamertag",
+      "examples": ["emblem gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "gamehistory",
+      "format": "[query]",
+      "aliases": ["gh", "game history"],
+      "description": "This will return game stats, players, and round results in arena, warzone, custom matches\n`!gamehistory Gamertag`",
+      "examples": [
+        "gamehistory gamertag {arena}",
+        "gamehistory gamertag {warzone}",
+        "gamehistory gamertag {custom}"
+      ],
+      "args": ["query"]
+    },
+    {
+      "name": "gamesplayed",
+      "format": "[Gamertag]",
+      "aliases": ["gp", "games played"],
+      "description": "Get gamesplayed in all playlist.\n `!gamesplayed gamertag`",
+      "examples": ["gamesplayed gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "halo",
+      "format": "[Gamertag]",
+      "aliases": ["h"],
+      "description": "Halo 5 Spartan Statistics",
+      "examples": ["Halo Gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "image",
+      "format": "[Gamertag]",
+      "aliases": ["spartan", "png"],
+      "description": "Get players Halo 5 image\n `!image gamertag`",
+      "examples": ["image gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "kd",
+      "format": "[Gamertag]",
+      "aliases": ["killdeath"],
+      "description": "Get players K/D.\n `!kd gamertag` ",
+      "examples": ["kd gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "kda",
+      "format": "[Gamertag]",
+      "aliases": ["killdeathaverage"],
+      "description": "Get players KDA.\n `!kda gamertag` ",
+      "examples": ["kda gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "medals",
+      "format": "[query]",
+      "aliases": ["m", "medal"],
+      "description": "Get players Halo 5 medals\n `!medals gamertag {keyword}`",
+      "examples": ["medals gamertag"],
+      "args": ["query"]
+    },
+    {
+      "name": "myrank",
+      "format": "[Gamertag]",
+      "aliases": ["ranks", "rank", "myranks"],
+      "description": "Get players current season ranks\n `!myrank gamertag` ",
+      "examples": ["myrank gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "playtime",
+      "format": "[Gamertag]",
+      "aliases": ["pt", "play time"],
+      "description": "Get playtime in all playlist.\n `!playtime gamertag` ",
+      "examples": ["playtime gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "profile",
+      "format": "[Gamertag]",
+      "aliases": ["p"],
+      "description": "Display your Halo 5 Nameplate.",
+      "examples": ["profile gamertag", "p gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "recentgames",
+      "format": "[Gamertag]",
+      "aliases": ["rg", "recent games"],
+      "description": "Get recent games streak in all arena.\n `!recentgames gamertag` ",
+      "examples": ["recentgames gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "setbg",
+      "format": "<Color>",
+      "aliases": ["sb", "setbackground"],
+      "description": "Save a Color to my database, options are *Black, Brown, Blue, Green, Grey, Orange, Pink, Purple, Red, Sky, White, Yellow*",
+      "examples": ["setbg color"],
+      "args": ["Color"]
+    },
+    {
+      "name": "setgt",
+      "format": "<Gamertag>",
+      "aliases": ["sg"],
+      "description": "Save your `Gamertag` to my database.",
+      "examples": ["setgt gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "stats",
+      "format": "[Gamertag]",
+      "aliases": ["statistics"],
+      "description": "Get players getStats.\n `!stats gamertag` ",
+      "examples": ["stats gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "warzone",
+      "format": "[Gamertag]",
+      "aliases": ["wz"],
+      "description": "Get players warzone stats.\n `!warzone gamertag` ",
+      "examples": ["warzone gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "weapon",
+      "format": "[query]",
+      "aliases": ["w", "weapons"],
+      "description": "Get the top ten weapons used or get detailed weapon stats for arena only\n`!weapon gamertag {weapon_name}`",
+      "examples": ["weapon gamertag"],
+      "args": ["query"]
+    },
+    {
+      "name": "xp",
+      "format": "[Gamertag]",
+      "aliases": ["x", "sr", "spartanrank"],
+      "description": "Get players XP\n `!xp gamertag` ",
+      "examples": ["xp gamertag"],
+      "args": ["Gamertag"]
+    }
+  ],
+  "since": 1564992833948
+}

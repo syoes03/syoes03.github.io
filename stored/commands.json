@@ -1,0 +1,67 @@
+{
+  "content": [
+    {
+      "name": "groups",
+      "format": null,
+      "aliases": ["list-groups", "show-groups", "listgroups", "showgroups"],
+      "description": "Lists all command groups.",
+      "examples": null,
+      "args": null
+    },
+    {
+      "name": "enable",
+      "format": "<command/group>",
+      "aliases": [
+        "enable-command",
+        "cmd-on",
+        "command-on",
+        "enablecommand",
+        "cmdon",
+        "commandon"
+      ],
+      "description": "Enables a command or command group.",
+      "examples": ["enable util", "enable Utility", "enable prefix"],
+      "args": ["cmdOrGrp"]
+    },
+    {
+      "name": "disable",
+      "format": "<command/group>",
+      "aliases": [
+        "disable-command",
+        "cmd-off",
+        "command-off",
+        "disablecommand",
+        "cmdoff",
+        "commandoff"
+      ],
+      "description": "Disables a command or command group.",
+      "examples": ["disable util", "disable Utility", "disable prefix"],
+      "args": ["cmdOrGrp"]
+    },
+    {
+      "name": "reload",
+      "format": "<command/group>",
+      "aliases": ["reload-command", "reloadcommand"],
+      "description": "Reloads a command or command group.",
+      "examples": ["reload some-command"],
+      "args": ["cmdOrGrp"]
+    },
+    {
+      "name": "load",
+      "format": "<command>",
+      "aliases": ["load-command", "loadcommand"],
+      "description": "Loads a new command.",
+      "examples": ["load some-command"],
+      "args": ["command"]
+    },
+    {
+      "name": "unload",
+      "format": "<command>",
+      "aliases": ["unload-command", "unloadcommand"],
+      "description": "Unloads a command.",
+      "examples": ["unload some-command"],
+      "args": ["command"]
+    }
+  ],
+  "since": 1564992833948
+}

@@ -1,0 +1,53 @@
+{
+  "content": [
+    {
+      "name": "1v1",
+      "format": "[text]",
+      "aliases": ["onevone"],
+      "description": "Compare stats with any two Halo players",
+      "examples": ["!1v1 Gamertag vs Gamertag"],
+      "args": ["text"]
+    },
+    {
+      "name": "covco",
+      "format": "[text]",
+      "aliases": ["cvc"],
+      "description": "Compare stats with any two Spartan Companies.",
+      "examples": ["\n```!covco Spartan Company vs Spartan Company```"],
+      "args": ["text"]
+    },
+    {
+      "name": "leader",
+      "format": "<text>",
+      "aliases": ["l"],
+      "description": "Halo's Top Leaders 1-10 players of Arena Ranked playlists.",
+      "examples": ["leader Slayer", "leader Team Arena"],
+      "args": ["text"]
+    },
+    {
+      "name": "lfg",
+      "format": "<Game Type> <Playlist> <Player Slots> <Message> <Global>",
+      "aliases": ["lfg", "looking for group", "looking for game"],
+      "description": "Begins the request process to find gamers.",
+      "examples": ["lfg Social BTB 8", "LFG"],
+      "args": ["gametype", "playlist", "slots", "message", "global"]
+    },
+    {
+      "name": "listcompanycoms",
+      "format": null,
+      "aliases": ["lcc", "listcompanycom", "list company coms"],
+      "description": "List all company commendations",
+      "examples": ["listcompanycoms"],
+      "args": null
+    },
+    {
+      "name": "listcoms",
+      "format": null,
+      "aliases": ["lc", "listcom", "list com"],
+      "description": "List all personal commendations",
+      "examples": ["listcoms"],
+      "args": null
+    }
+  ],
+  "since": 1564992833948
+}

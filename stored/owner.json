@@ -1,0 +1,37 @@
+{
+  "content": [
+    {
+      "name": "addpatron",
+      "format": "<user>",
+      "aliases": ["addpatron"],
+      "description": "Adds user to the Elite Patron group.",
+      "examples": null,
+      "args": ["user"]
+    },
+    {
+      "name": "blacklist-user",
+      "format": "<user>",
+      "aliases": ["blacklist", "blacklistuser"],
+      "description": "Prohibit a user from using Halo dBot",
+      "examples": null,
+      "args": ["user"]
+    },
+    {
+      "name": "removepatron",
+      "format": "<user>",
+      "aliases": ["removepatron"],
+      "description": "Remove a user from the Patron list.",
+      "examples": null,
+      "args": ["user"]
+    },
+    {
+      "name": "whitelist-user",
+      "format": "<user>",
+      "aliases": ["whitelist", "whitelistuser"],
+      "description": "Remove a user from the blacklist",
+      "examples": null,
+      "args": ["user"]
+    }
+  ],
+  "since": 1564992833948
+}

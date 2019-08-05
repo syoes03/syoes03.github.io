@@ -1,0 +1,195 @@
+{
+  "content": [
+    {
+      "name": "app",
+      "format": null,
+      "aliases": ["applications"],
+      "description": "Get the app for iOS or Android",
+      "examples": ["app"],
+      "args": null
+    },
+    {
+      "name": "avatar",
+      "format": "[user]",
+      "aliases": ["ava"],
+      "description": "Gets a user's avatar.",
+      "examples": null,
+      "args": ["user"]
+    },
+    {
+      "name": "desc",
+      "format": "<text>",
+      "aliases": ["descriptions"],
+      "description": "Descriptions for all commendations",
+      "examples": ["descweapon name"],
+      "args": ["text"]
+    },
+    {
+      "name": "donate",
+      "format": null,
+      "aliases": ["donations", "patreon"],
+      "description": "Become one of the elite in your server. Help a worthy cause",
+      "examples": ["donate"],
+      "args": null
+    },
+    {
+      "name": "guild",
+      "format": null,
+      "aliases": ["server"],
+      "description": "Guild data..",
+      "examples": ["guild"],
+      "args": null
+    },
+    {
+      "name": "help",
+      "format": "[command]",
+      "aliases": ["commands", "command"],
+      "description": "Replies with a Message for helping the user.",
+      "examples": ["help", "help command_name"],
+      "args": ["command"]
+    },
+    {
+      "name": "info",
+      "format": null,
+      "aliases": ["information"],
+      "description": "Current Halo dBot stats.\n[Go to the offical Halo dBot Site](https://halodbot.com)\n[Become a Patron](https://www.patreon.com/may_hamn)",
+      "examples": ["info"],
+      "args": null
+    },
+    {
+      "name": "join",
+      "format": null,
+      "aliases": ["joining"],
+      "description": "Invite Halo dBot to your Discord server.",
+      "examples": ["join"],
+      "args": null
+    },
+    {
+      "name": "list-emoji",
+      "format": null,
+      "aliases": ["le", "list-emoji", "listemoji", "listemoji"],
+      "description": "List all emoji's in a server",
+      "examples": null,
+      "args": null
+    },
+    {
+      "name": "memory",
+      "format": null,
+      "aliases": ["mem", "ram"],
+      "description": "Owner Only, check the memory usage of dbot",
+      "examples": ["!memory"],
+      "args": null
+    },
+    {
+      "name": "module",
+      "format": "<module>",
+      "aliases": ["modu"],
+      "description": "Gets a list of commands inside a module.",
+      "examples": ["module util", "module fun"],
+      "args": ["module"]
+    },
+    {
+      "name": "modules",
+      "format": null,
+      "aliases": ["mdls"],
+      "description": "Returns a list of modules.",
+      "examples": ["modules"],
+      "args": null
+    },
+    {
+      "name": "playing",
+      "format": "<text>",
+      "aliases": ["watching"],
+      "description": "Update the Playing: message on Halo dBot. Only available to my creator <@175813708088344577> ;)",
+      "examples": ["playing"],
+      "args": ["text"]
+    },
+    {
+      "name": "remindme",
+      "format": "<reminder>",
+      "aliases": ["remind"],
+      "description": "Reminds you of something.",
+      "examples": null,
+      "args": ["remind"]
+    },
+    {
+      "name": "reply",
+      "format": null,
+      "aliases": ["rply"],
+      "description": "Replies with a Message.",
+      "examples": ["reply"],
+      "args": null
+    },
+    {
+      "name": "search",
+      "format": "<search>",
+      "aliases": ["s"],
+      "description": "Searches google.",
+      "examples": null,
+      "args": ["search"]
+    },
+    {
+      "name": "shorten",
+      "format": "<url>",
+      "aliases": ["sht"],
+      "description": "Shortens a URL.",
+      "examples": null,
+      "args": ["url"]
+    },
+    {
+      "name": "suggest",
+      "format": "<suggestion>",
+      "aliases": ["sgst"],
+      "description": "Sends a suggestion to a channel called #suggestions",
+      "examples": null,
+      "args": ["suggestion"]
+    },
+    {
+      "name": "support",
+      "format": null,
+      "aliases": ["sprt"],
+      "description": "Got issues, questions, or ideas? We have a very knowledgeable team ready to help you.",
+      "examples": ["support"],
+      "args": null
+    },
+    {
+      "name": "tip",
+      "format": null,
+      "aliases": ["hint"],
+      "description": "Get a tip for playing Halo 5.",
+      "examples": ["tip", "hint"],
+      "args": null
+    },
+    {
+      "name": "prefix",
+      "format": "[prefix/\"default\"/\"none\"]",
+      "aliases": [],
+      "description": "Shows or sets the command prefix.",
+      "examples": [
+        "prefix",
+        "prefix -",
+        "prefix omg!",
+        "prefix default",
+        "prefix none"
+      ],
+      "args": ["prefix"]
+    },
+    {
+      "name": "ping",
+      "format": null,
+      "aliases": [],
+      "description": "Checks the bot's ping to the Discord server.",
+      "examples": null,
+      "args": null
+    },
+    {
+      "name": "eval",
+      "format": "<script>",
+      "aliases": [],
+      "description": "Executes JavaScript code.",
+      "examples": null,
+      "args": ["script"]
+    }
+  ],
+  "since": 1564992833948
+}

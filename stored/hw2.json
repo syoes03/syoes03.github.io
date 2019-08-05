@@ -1,0 +1,21 @@
+{
+  "content": [
+    {
+      "name": "hw2stats",
+      "format": "[Gamertag]",
+      "aliases": ["hw2stat", "halowars2stats", "halowars2stat"],
+      "description": "Get players get HW2 stats.\n`!hw2xp gamertag`",
+      "examples": ["hw2stats gamertag"],
+      "args": ["Gamertag"]
+    },
+    {
+      "name": "hw2xp",
+      "format": "[Gamertag]",
+      "aliases": ["hw2xp"],
+      "description": "Get players get HW2 stats.\n`!hw2xp gamertag`",
+      "examples": ["hw2xp gamertag"],
+      "args": ["Gamertag"]
+    }
+  ],
+  "since": 1564992833948
+}

@@ -1,0 +1,45 @@
+{
+  "content": [
+    {
+      "name": "8ball",
+      "format": null,
+      "aliases": [],
+      "description": "Replies with a Message from Exuberant Wittness.",
+      "examples": ["8ball"],
+      "args": null
+    },
+    {
+      "name": "quote",
+      "format": null,
+      "aliases": ["q"],
+      "description": "Quotes from a mysterious source.",
+      "examples": ["quote"],
+      "args": null
+    },
+    {
+      "name": "serverleader",
+      "format": null,
+      "aliases": ["sl", "serverleaders", "server leaders"],
+      "description": "Display the Server Leaderboard for the !trivia.",
+      "examples": ["serverleader"],
+      "args": null
+    },
+    {
+      "name": "tbag",
+      "format": null,
+      "aliases": [],
+      "description": "Example of common halo sportsmanship",
+      "examples": ["tbag"],
+      "args": null
+    },
+    {
+      "name": "trivia",
+      "format": null,
+      "aliases": ["t", "game"],
+      "description": "SHALL WE PLAY A GAME?",
+      "examples": ["trivia"],
+      "args": null
+    }
+  ],
+  "since": 1564992833948
+}

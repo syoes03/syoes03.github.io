@@ -1,0 +1,75 @@
+{
+  "content": [
+    {
+      "name": "%com",
+      "format": "[Company]",
+      "aliases": ["%c"],
+      "description": "Percent of company kill commendation completed.\n`%com Spartan Company`",
+      "examples": ["%com Spartan Company"],
+      "args": ["Company"]
+    },
+    {
+      "name": "com",
+      "format": "[Company]",
+      "aliases": ["company"],
+      "description": "Company kill commendation progress.\n`!com Spartan Company`",
+      "examples": ["com Spartan Company"],
+      "args": ["Company"]
+    },
+    {
+      "name": "members",
+      "format": "[Company]",
+      "aliases": [],
+      "description": "List all company members.\n`!members Spartan Company`",
+      "examples": ["members Spartan Company"],
+      "args": ["Company"]
+    },
+    {
+      "name": "membersdate",
+      "format": "[Company]",
+      "aliases": ["md"],
+      "description": "List all company members.",
+      "examples": ["membersDate Spartan Company"],
+      "args": ["Company"]
+    },
+    {
+      "name": "membersleader",
+      "format": "[Company]",
+      "aliases": ["ml"],
+      "description": "Company leaders 1-10 players of Arena Ranked playlists.\n`!membersleader Spartan Company`",
+      "examples": [
+        "membersleader Spartan Company",
+        "membersleader Spartan Company {Slayer}"
+      ],
+      "args": ["Company"]
+    },
+    {
+      "name": "membersprogress",
+      "format": "<Commendation>",
+      "aliases": ["mp", "member-progress", "memberprogress"],
+      "description": "Spartan Company Member commendation progress for individual searches.`",
+      "examples": [
+        "membersprogress Can’t We Get Along?",
+        "mp Sting Like A Bee"
+      ],
+      "args": ["Commendation"]
+    },
+    {
+      "name": "setco",
+      "format": "<Company>",
+      "aliases": ["sc"],
+      "description": " Save your Spartan Company to my database.\n`!setco Spartan Company`",
+      "examples": ["setco Company"],
+      "args": ["Company"]
+    },
+    {
+      "name": "trackmembers",
+      "format": "[Gamertag]",
+      "aliases": ["tm", "trackmember"],
+      "description": "Spartan Company Member commendation progress tracker.`",
+      "examples": null,
+      "args": ["Gamertag"]
+    }
+  ],
+  "since": 1564992833948
+}
