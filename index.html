@@ -7,7 +7,7 @@
 			$(document).ready(function() {
 				$.getJSON("stored/fun.json", function(data) {
 					var commandData = "";
-					$.each(data, function(key, value) {
+					$.each(data.content, function(key, value) {
 						commandData += "<tr>";
 						commandData += "<td>" + value.name + "</td>";
 						commandData += "<td>" + value.description + "</td>";
