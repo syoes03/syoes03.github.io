@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 <table id="userdata" border="2">
@@ -31,3 +32,6 @@
 !weapon gamertag {weapon_name}</td><td>w,weapons</td></tr><tr><td>xp</td><td>Gamertag</td><td>Get players XP
  !xp gamertag </td><td>x,sr,spartanrank</td></tr></tbody>
 			</table>
+=======
+setup to stage updated command lists and details
+>>>>>>> 3b627125ec9c7e894ee18c9887fb1c2d3ff74a67
