@@ -29,6 +29,7 @@
 				<th>Description</th>
 				<th>Examples</th>
 			</tr>
+			<div id="tableContent"></div>
 		</table>
 	</body>
 </html>
@@ -43,7 +44,7 @@
 				commandData += "<td>" + value.examples + "</td>";
 				commandData += "</tr>";
 			});
-			$("fun").append(commandData);
+			$("#tableContent").append(commandData);
 		});
 	});
 </script>
