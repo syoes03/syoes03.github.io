@@ -6,6 +6,16 @@
 			th,
 			td {
 				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			th,
+			td {
+				padding: 15px;
+				text-align: left;
+			}
+			table#t01 {
+				width: 100%;
+				background-color: #f1f1c1;
 			}
 		</style>
 	</head>
@@ -13,27 +23,27 @@
 	<body>
 		<h2>Bordered Table</h2>
 		<p>Use the CSS border property to add a border to the table.</p>
-		<table style="width:100%">
+		<table style="width:100%" id="fun">
 			<tr>
 				<th>Command Name</th>
 				<th>Description</th>
 				<th>Examples</th>
 			</tr>
-			<script>
-				$(document).ready(function() {
-					$.getJSON("stored/fun.json", function(data) {
-						var commandData = "";
-						$.each(data.content, function(key, value) {
-							commandData += "<tr>";
-							commandData += "<td>" + value.name + "</td>";
-							commandData += "<td>" + value.description + "</td>";
-							commandData += "<td>" + value.examples + "</td>";
-							commandData += "</tr>";
-						});
-						$("#table").append(commandData);
-					});
-				});
-			</script>
 		</table>
 	</body>
 </html>
+<script>
+	$(document).ready(function() {
+		$.getJSON("stored/fun.json", function(data) {
+			var commandData = "";
+			$.each(data.content, function(key, value) {
+				commandData += "<tr>";
+				commandData += "<td>" + value.name + "</td>";
+				commandData += "<td>" + value.description + "</td>";
+				commandData += "<td>" + value.examples + "</td>";
+				commandData += "</tr>";
+			});
+			$("#fun").append(commandData);
+		});
+	});
+</script>
