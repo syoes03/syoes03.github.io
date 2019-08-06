@@ -23,11 +23,11 @@ This is a test of the html
  !kd gamertag </td><td>killdeath</td></tr><tr><td>kda</td><td>Gamertag</td><td>Get players KDA.
  !kda gamertag </td><td>killdeathaverage</td></tr><tr><td>medals</td><td>query</td><td>Get players Halo 5 medals
  !medals gamertag {keyword}`</td><td>m,medal</td></tr><tr><td>myrank</td><td>Gamertag</td><td>Get players current season ranks
- `!myrank gamertag` </td><td>ranks,rank,myranks</td></tr><tr><td>playtime</td><td>Gamertag</td><td>Get playtime in all playlist.
- `!playtime gamertag` </td><td>pt,play time</td></tr><tr><td>profile</td><td>Gamertag</td><td>Display your Halo 5 Nameplate.</td><td>p</td></tr><tr><td>recentgames</td><td>Gamertag</td><td>Get recent games streak in all arena.
- `!recentgames gamertag` </td><td>rg,recent games</td></tr><tr><td>setbg</td><td>Color</td><td>Save a Color to my database, options are *Black, Brown, Blue, Green, Grey, Orange, Pink, Purple, Red, Sky, White, Yellow*</td><td>sb,setbackground</td></tr><tr><td>setgt</td><td>Gamertag</td><td>Save your `Gamertag` to my database.</td><td>sg</td></tr><tr><td>stats</td><td>Gamertag</td><td>Get players getStats.
- `!stats gamertag` </td><td>statistics</td></tr><tr><td>warzone</td><td>Gamertag</td><td>Get players warzone stats.
- `!warzone gamertag` </td><td>wz</td></tr><tr><td>weapon</td><td>query</td><td>Get the top ten weapons used or get detailed weapon stats for arena only
-`!weapon gamertag {weapon_name}`</td><td>w,weapons</td></tr><tr><td>xp</td><td>Gamertag</td><td>Get players XP
- `!xp gamertag` </td><td>x,sr,spartanrank</td></tr></tbody>
+!myrank gamertag </td><td>ranks,rank,myranks</td></tr><tr><td>playtime</td><td>Gamertag</td><td>Get playtime in all playlist.
+ !playtime gamertag </td><td>pt,play time</td></tr><tr><td>profile</td><td>Gamertag</td><td>Display your Halo 5 Nameplate.</td><td>p</td></tr><tr><td>recentgames</td><td>Gamertag</td><td>Get recent games streak in all arena.
+ !recentgames gamertag </td><td>rg,recent games</td></tr><tr><td>setbg</td><td>Color</td><td>Save a Color to my database, options are *Black, Brown, Blue, Green, Grey, Orange, Pink, Purple, Red, Sky, White, Yellow*</td><td>sb,setbackground</td></tr><tr><td>setgt</td><td>Gamertag</td><td>Save your (Gamertag) to my database.</td><td>sg</td></tr><tr><td>stats</td><td>Gamertag</td><td>Get players getStats.
+ !stats gamertag </td><td>statistics</td></tr><tr><td>warzone</td><td>Gamertag</td><td>Get players warzone stats.
+ !warzone gamertag </td><td>wz</td></tr><tr><td>weapon</td><td>query</td><td>Get the top ten weapons used or get detailed weapon stats for arena only
+!weapon gamertag {weapon_name}</td><td>w,weapons</td></tr><tr><td>xp</td><td>Gamertag</td><td>Get players XP
+ !xp gamertag </td><td>x,sr,spartanrank</td></tr></tbody>
 			</table>
