@@ -9,7 +9,7 @@ This is a test of the html
 				</tr></thead>
 				<tbody>
 
-				<tr><td>arena</td><td>Gamertag</td><td>Get players get arena stats.
+<tr><td>arena</td><td>Gamertag</td><td>Get players get arena stats.
 !arena gamertag</td><td>a</td></tr><tr><td>background</td><td>Gamertag</td><td>Get Custom games played.
  !background gamertag </td><td>bg,back ground,customs</td></tr><tr><td>campaign</td><td>Gamertag</td><td>Get gamesplayed in all playlist.
  !campaign gamertag </td><td>c</td></tr><tr><td>csr</td><td>Gamertag</td><td>Get players CSR
