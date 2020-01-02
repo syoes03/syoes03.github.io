@@ -1,5 +1,5 @@
 <script>
-        $.getJSON("stored/personal.json", function (data) {
+        $.getJSON("/Users/syoes/halo-dbot_Public/backup/syoes03.github.io/stored/personal.json", function (data) {
             data.content.forEach(f => {
                 let tblRow = `
                 <tr>
