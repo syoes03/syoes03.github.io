@@ -13,7 +13,7 @@
         });
     </script>
 
-<table class="table table-hover">
+<table>
     <thead>
      <th>Command Name</th>
        <th>Args</th>
@@ -21,4 +21,4 @@
       </thead>
     <tbody id="personal">
  </tbody>
-  </table>
+ </table>
