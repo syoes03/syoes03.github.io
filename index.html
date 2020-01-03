@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Halo dBot Commands</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/shared.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124572470-1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-124572470-1');
+    </script>
+
+    <script>
+        $.getJSON("stored/personal.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                <tr>
+                    <td>${f.name}</td>
+                    ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                    <td>${f.description}</td>
+                   
+                </tr>`;
+                $(tblRow).appendTo("#personal");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/company.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                    <tr>
+                    <td>${f.name}</td>
+                    ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                    <td>${f.description}</td>
+                  
+                    </tr>`;
+                $(tblRow).appendTo("#company");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/general.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                       <tr>
+                        <td>${f.name}</td>
+                        ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                        <td>${f.description}</td>
+                       
+                        </tr>`;
+                $(tblRow).appendTo("#general");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/hw2.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                            <tr>
+                            <td>${f.name}</td>
+                            ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                            <td>${f.description}</td>
+                           
+                            </tr>`;
+                $(tblRow).appendTo("#hw2");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/util.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                                <tr>
+                                <td>${f.name}</td>
+                                ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                                <td>${f.description}</td>
+                               
+                                </tr>`;
+                $(tblRow).appendTo("#util");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/fun.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                    <tr>
+                    <td>${f.name}</td>
+                    ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                    <td>${f.description}</td>
+                    </tr>`;
+                $(tblRow).appendTo("#fun");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/premium.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                        <tr>
+                        <td>${f.name}</td>
+                        ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                        <td>${f.description}</td>
+                        </tr>`;
+                $(tblRow).appendTo("#premium");
+            });
+        });
+    </script>
+    <script>
+        $.getJSON("stored/commands.json", function (data) {
+            data.content.forEach(f => {
+                let tblRow = `
+                           <tr>
+                    <td>${f.name}</td>
+                    ${f.args ? `<td>[${f.args}]</td>` : `<td></td>`}
+                    <td>${f.description}</td>
+                   
+                    </tr>`;
+                $(tblRow).appendTo("#commands");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            -->
+                <a class="navbar-brand" href="commands.html">
+                    <img class="brand-img" src="images/RoninBotShine.jpg">
+                    <span>Halo dBot</span>
+                </a>
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </ul>
+
+                <!--
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            -->
+                <a class="navbar-brand" href="recCommands.html">
+                    <img class="brand-img" src="images/Reclaimer.png">
+                    <span>Reclaimer</span>
+                </a>
+                <!--
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            -->
+                <a class="navbar-brand" href="coreCommands.html">
+                    <img class="brand-img" src="images/core.png">
+                    <span>Core</span>
+                </a>
+            </div>
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <div class="main-table col-xs-12 col-md-8 col-lg-8">
+                    <div class="tabs">
+
+                        <nav role='navigation' class="transformer-tabs">
+                            <ul class='alignment'>
+                                <li><a id="PersonalCommands" class="active"><i class="fa fas fa-child"></i>Personal</a>
+                                </li>
+                                <li><a id="PremiumCommands"><i class="fa fa-keyboard-o"></i>Premium</a></li>
+                                <li><a id="CompanyCommands"><i class="fa fas fa-users"></i>Company</a></li>
+                                <li><a id="GeneralCommands"><i class="fa fa-cog"></i>General</a></li>
+                                <li><a id="HW2Commands"><i class="fa fas fa-child"></i>Halo Wars 2</a></li>
+
+                                <li><a id="UtilCommands"><i class="fa fa-keyboard-o"></i>Util</a></li>
+                                <li><a id="FunCommands"><i class="fa fa-gamepad"></i>Fun</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div id="PersonalCommandsTable" class="col-xs-12 active">
+
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="personal">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="PremiumCommandsTable" class="col-xs-12">
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="premium">
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                        <div id="CompanyCommandsTable" class="col-xs-12">
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="company">
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                        <div id="GeneralCommandsTable" class="col-xs-12">
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="general">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="HW2CommandsTable" class="col-xs-12">
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="hw2">
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                        <div id="UtilCommandsTable" class="col-xs-12">
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="util">
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        <div id="FunCommandsTable" class="col-xs-12">
+                            <div class="table">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Command Name</th>
+                                        <th>Args</th>
+                                        <th>Description</th>
+
+                                    </thead>
+                                    <tbody id="fun">
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <!-- /.container-fluid -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <div class="sidebarItems">
+                        <a type="button" class="btn discordBtn"
+                            href="https://discordapp.com/oauth2/authorize?client_id=316478352133193728&scope=bot&permissions=3181582">
+                            Add me to your server!
+                            <img class="discordimg" src="images/DiscordWhite.png">
+                        </a>
+                    </div>
+                    <div class="sidebarItems">
+                        <a href="https://www.patreon.com/bePatron?u=6503482"
+                            data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+                        <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                    </div>
+                    <div class="sidebarItems">
+                        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                        <script
+                            type='text/javascript'>kofiwidget2.init('Buy Me a Coffee!', '#20B2AA', 'X8X1FQSO'); kofiwidget2.draw();</script>
+                    </div>
+                    <div class="sidebarItems">
+                        <iframe class="discord" src="https://discordapp.com/widget?id=315578499337289728&theme=dark"
+                            width="inherit" height="500" allowtransparency="true" frameborder="0"></iframe>
+                    </div>
+
+                </div>
+                <!-- /#page-wrapper -->
+            </div>
+            <!-- /#wrapper -->
+
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Tab scripting -->
+            <script src="js/customised.js"></script>
+
+            <footer>&copy WebDesign by LightTomato7686<footer>
+</body>
+
+</html>

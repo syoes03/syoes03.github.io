@@ -1,10 +1,4 @@
 <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-124572470-1');
-    </script>
-<script>
         $.getJSON("stored/personal.json", function (data) {
             data.content.forEach(f => {
                 let tblRow = `
